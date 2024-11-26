@@ -1,6 +1,4 @@
-Here’s a revised and tailored README for your AR Educational Platform:
 
----
 
 # AR Educational Platform 👩‍🏫🌍  
 
