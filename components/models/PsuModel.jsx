@@ -88,7 +88,7 @@ type GLTFResult = GLTF & {
 
 
 export default function Psu(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF(require ( '../assets/Psu.glb') ) as GLTFResult
+  const { nodes, materials } = useGLTF(require ( '../models/PsuApp') ) as GLTFResult
   return (
     <group {...props} dispose={null}>
       <group

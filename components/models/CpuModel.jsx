@@ -24,7 +24,7 @@ type GLTFResult = GLTF & {
 
 
 export default function Cpu(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF( require ( '../assets/Cpu.glb' ) ) as GLTFResult
+  const { nodes, materials } = useGLTF( require ( '../models/CpuApp' ) ) as GLTFResult
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>

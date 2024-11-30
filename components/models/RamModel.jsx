@@ -34,7 +34,7 @@ type GLTFResult = GLTF & {
 
 
 export default function Ram(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF(require ( '../assets/Ram.glb')) as GLTFResult
+  const { nodes, materials } = useGLTF(require ( '../models/RamApp')) as GLTFResult
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>

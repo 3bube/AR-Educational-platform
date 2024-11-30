@@ -7,13 +7,12 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import Psu from "../models/PsuModel";
 import useControls from "r3f-native-orbitcontrols";
 import { StatusBar } from "expo-status-bar";
-import Gradient from "../models/Gradient";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { router } from "expo-router";
 import Psu from "../models/PsuModel";
 
 
-const Index = () => {
+const Psu = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [OrbitControls, events] = useControls();
 
@@ -28,7 +27,6 @@ const Index = () => {
         </Text>
       </View>
       <View style={styles.modelContainer} {...events}>
-        <Gradient />
         {loading && <Loader />}
         <Canvas>
           <OrbitControls enablePan={false} enableZoom={false} />
